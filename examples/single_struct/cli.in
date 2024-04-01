@@ -1,0 +1,15 @@
+#[main]
+struct Cli {
+    #[short, long]
+    some: bool,
+    #[short, long]
+    verbose: bool,
+    #[short, long, alias = omg]
+    param: i16,
+    #[short, long]
+    float_value: f32,
+    #[long]
+    str: string
+    #[short, long]
+    many_values: Vec<u32>,
+}
